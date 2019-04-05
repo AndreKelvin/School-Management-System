@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="603.0" prefWidth="742.0" stylesheets="@BarChart.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolchart.SchoolChartController">
+   <children>
+      <HBox prefHeight="0.0" prefWidth="500.0" style="-fx-background-color: #0066ff;">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="SUMARY OF ANNUAL RESULT" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="28.0" prefWidth="500.0">
+         <children>
+            <JFXComboBox fx:id="comboClass" focusColor="#0066ff" prefHeight="25.0" prefWidth="186.0" promptText="Class" HBox.hgrow="NEVER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin></JFXComboBox>
+            <JFXComboBox fx:id="comboYear" focusColor="#0066ff" layoutX="66.0" layoutY="10.0" prefHeight="25.0" prefWidth="184.0" promptText="Academic Year" HBox.hgrow="NEVER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></JFXComboBox>
+            <JFXComboBox fx:id="comboTerm" focusColor="#0066ff" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="146.0" promptText="Term" HBox.hgrow="NEVER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></JFXComboBox>
+            <JFXButton onAction="#genAction" text="Generate Report" HBox.hgrow="NEVER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="20.0" top="1.0" />
+               </HBox.margin></JFXButton>
+         </children>
+      </HBox>
+      <BarChart fx:id="barChart" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</VBox>

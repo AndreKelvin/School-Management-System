@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="366.0" prefWidth="565.0" styleClass="stackpane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolpreloader.SchoolPreloader">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="418.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="187.0" text="Developed By Kelvin Jubril Okpoh" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="47.0" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="187.0" text="andrekelvin8@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="64.0" maxWidth="1.7976931348623157E308" prefHeight="17.0" prefWidth="187.0" text="+2348183737674" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="45.0" prefWidth="600.0" text="SCHOOL MANAGEMENT SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <JFXProgressBar prefHeight="1.0" prefWidth="579.0">
+               <VBox.margin>
+                  <Insets top="120.0" />
+               </VBox.margin>
+            </JFXProgressBar>
+            <Label prefHeight="17.0" prefWidth="77.0" text="Loading..." textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

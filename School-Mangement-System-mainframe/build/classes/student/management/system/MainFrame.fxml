@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="537.0" prefWidth="767.0" stylesheets="@StudentCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.management.system.MainFrameController">
+   <children>
+      <HBox prefHeight="41.0" prefWidth="767.0" style="-fx-background-color: #0066ff;">
+         <children>
+            <JFXButton layoutX="348.0" layoutY="10.0" minWidth="-Infinity" onAction="#mainAction" prefHeight="32.0" prefWidth="74.0" text="Main">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton minWidth="-Infinity" onAction="#studentAction" prefHeight="30.0" prefWidth="104.0" text="Student">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton minWidth="-Infinity" onAction="#scoreSheetAction" prefHeight="39.0" prefWidth="146.0" text="Score Sheet">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton minWidth="-Infinity" onAction="#reportAction" prefHeight="30.0" prefWidth="104.0" text="Reports">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton minWidth="-Infinity" onAction="#settingsAction" prefHeight="30.0" prefWidth="104.0" text="Settings">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label fx:id="labelTerm" alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="251.0" text="TERM &amp; ACADEMIC YEAR" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="483.0" prefWidth="767.0" VBox.vgrow="ALWAYS">
+         <children>
+            <BorderPane fx:id="bPane" prefHeight="487.0" prefWidth="767.0" VBox.vgrow="ALWAYS">
+               <center>
+                  <BorderPane fx:id="mainPane" BorderPane.alignment="CENTER">
+                     <top>
+                        <HBox prefHeight="26.0" prefWidth="767.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../icons/boyandgirl.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Students: ">
+                                       <font>
+                                          <Font name="Britannic Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelStu" maxWidth="1.7976931348623157E308" text="0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Britannic Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <children>
+                                    <ImageView fitHeight="39.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../icons/boy.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Boys: ">
+                                       <font>
+                                          <Font name="Britannic Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelBoys" maxWidth="1.7976931348623157E308" text="0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Britannic Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <ImageView fitHeight="39.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../icons/girl.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Girls: ">
+                                       <font>
+                                          <Font name="Britannic Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelGirl" maxWidth="1.7976931348623157E308" text="0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Britannic Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <ImageView fitHeight="40.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../icons/t.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label text="Teachers: ">
+                                       <font>
+                                          <Font name="Britannic Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelTeach" text="0">
+                                       <font>
+                                          <Font name="Britannic Bold" size="15.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </top>
+                     <center>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label text="School Logo" />
+                              <ImageView fx:id="imageView" fitHeight="380.0" fitWidth="534.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </center></BorderPane>
+            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" VBox.vgrow="NEVER">
+               <children>
+                  <Label fx:id="labelSchName" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" text="SCHOOL NAME" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="Britannic Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelDate" alignment="BOTTOM_RIGHT" maxWidth="1.7976931348623157E308" text="12/05/2018">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

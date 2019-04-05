@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="124.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolstudentclass.EditClassController">
+   <children>
+      <JFXTextField fx:id="textFieldEdit" focusColor="#0066ff" promptText="eg: SS1A">
+         <VBox.margin>
+            <Insets left="100.0" right="80.0" top="20.0" />
+         </VBox.margin>
+      </JFXTextField>
+      <JFXButton onAction="#editAction" prefHeight="25.0" prefWidth="98.0" stylesheets="@Class.css" text="Save Change">
+         <VBox.margin>
+            <Insets left="178.0" top="20.0" />
+         </VBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</VBox>

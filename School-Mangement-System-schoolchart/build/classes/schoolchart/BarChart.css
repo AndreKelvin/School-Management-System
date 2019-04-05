@@ -1,0 +1,63 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-Jun-2018, 10:15:16
+    Author     : Andre Kelvin
+*/
+.button{
+    -fx-background-color: #0066ff;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: white;
+    -fx-text-fill: #0066ff;
+    -fx-border-color: #0066ff;
+}
+.combo-box-popup .list-cell:filled:hover {
+    -fx-background-color: #0066ff;
+}
+
+.list-view:focused .list-cell:focused {
+    -fx-background-color: #0066ff;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+
+.default-color1.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+
+.default-color2.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+
+.default-color3.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+
+.default-color4.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+
+.default-color5.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+
+.default-color6.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+
+.default-color7.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+
+.default-color8.chart-bar {
+    -fx-bar-fill: #0066ff;
+}
+

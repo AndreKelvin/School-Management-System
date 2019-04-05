@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="576.0" prefWidth="731.0" stylesheets="@Fee.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolfees.SchoolFeesController">
+   <children>
+      <HBox prefHeight="31.0" prefWidth="731.0" style="-fx-background-color: #0066ff;" VBox.vgrow="NEVER">
+         <children>
+              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" minHeight="16" minWidth="69" text="SCHOOL FEES" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="558.0" prefWidth="141.0">
+               <children>
+                  <JFXButton onAction="#addAction" prefHeight="30.0" prefWidth="90.0" text="Add Fee" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="20.0" top="50.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="butEdit" layoutX="10.0" layoutY="10.0" onAction="#editAction" prefHeight="30.0" prefWidth="90.0" text="Edit Fee" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="butDelete" layoutX="10.0" layoutY="35.0" onAction="#deleteAction" prefHeight="30.0" prefWidth="90.0" text="Delete Fee" VBox.vgrow="NEVER">
+                     <VBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <TableView fx:id="tableView" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="columnClass" prefWidth="75.0" text="Class" />
+                <TableColumn fx:id="columnFee" prefWidth="75.0" text="Fee" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

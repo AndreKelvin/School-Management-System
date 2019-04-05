@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="740.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolstudentdetails.StudentAcademicReportController">
+   <children>
+      <HBox prefHeight="23.0" prefWidth="740.0" style="-fx-background-color: #0066ff;">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="ACADEMIC REPORT" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="740.0">
+         <children>
+            <Label fx:id="labelStdName" text="Student Name" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets left="3.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="labelClass" layoutX="10.0" layoutY="10.0" text="Class" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="labelTerm" layoutX="38.0" layoutY="10.0" text="Term" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="labelAcaYear" layoutX="217.0" layoutY="10.0" text="Academic Year">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="columnSub" prefWidth="75.0" text="Subjects" />
+          <TableColumn fx:id="columnConAss" prefWidth="75.0" text="Continues Assessement" />
+            <TableColumn fx:id="columnExam" prefWidth="75.0" text="Exam" />
+            <TableColumn fx:id="columnTotal" prefWidth="75.0" text="Total" />
+            <TableColumn fx:id="columnGrade" prefWidth="75.0" text="Grade" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</VBox>

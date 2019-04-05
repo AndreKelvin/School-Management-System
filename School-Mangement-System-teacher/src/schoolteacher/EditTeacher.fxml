@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<VBox prefHeight="641.0" prefWidth="752.0" stylesheets="@Teacher.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolteacher.EditTeacherController">
+   <children>
+      <HBox prefHeight="0.0" prefWidth="646.0" style="-fx-background-color: #0066ff;">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="EDIT TEACHER" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="401.0" prefWidth="716.0" VBox.vgrow="ALWAYS">
+         <children>
+            <GridPane prefHeight="368.0" prefWidth="334.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="128.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="204.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Date Of Birth" GridPane.rowIndex="1" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Gender" GridPane.rowIndex="2" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Qualification" GridPane.rowIndex="3" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Salary" GridPane.rowIndex="4" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Date Joined" GridPane.rowIndex="5" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Marital  Status" GridPane.rowIndex="6" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Children Count" GridPane.rowIndex="7" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Spouse Name" GridPane.rowIndex="8" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Nationality" GridPane.rowIndex="9" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Mobile Number" GridPane.rowIndex="10" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Email" GridPane.rowIndex="11" />
+                  <Label layoutX="10.0" layoutY="18.0" text="Address" GridPane.rowIndex="12" />
+                  <Label layoutX="10.0" layoutY="51.0" text="Name" />
+                  <JFXTextField fx:id="textFieldName" focusColor="#0066ff" GridPane.columnIndex="1" />
+                  <JFXDatePicker fx:id="dateOfBirth" defaultColor="#0066ff" prefHeight="25.0" prefWidth="212.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXDatePicker>
+                  <JFXRadioButton fx:id="radioM" style="-jfx-selected-color: #0066ff;" text="M" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tg" />
+                     </toggleGroup>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="radioF" layoutX="177.0" layoutY="84.0" style="-jfx-selected-color: #0066ff;" text="F" toggleGroup="$tg" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="60.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXRadioButton>
+                  <JFXTextField fx:id="textFieldQual" focusColor="#0066ff" layoutX="177.0" layoutY="14.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <JFXTextField fx:id="textFieldSalary" focusColor="#0066ff" layoutX="177.0" layoutY="113.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <JFXTextField fx:id="textFieldSpName" focusColor="#0066ff" layoutX="177.0" layoutY="212.0" promptText="Leave it blank if none" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <JFXTextField fx:id="textFieldNat" focusColor="#0066ff" layoutX="177.0" layoutY="278.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <JFXTextField fx:id="textFieldNum" focusColor="#0066ff" layoutX="177.0" layoutY="311.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <JFXTextField fx:id="textFieldEmail" focusColor="#0066ff" layoutX="177.0" layoutY="344.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <JFXTextField fx:id="textFieldAddress" focusColor="#0066ff" layoutX="177.0" layoutY="377.0" prefHeight="15.0" prefWidth="167.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <JFXTextField fx:id="textFieldChildren" focusColor="#0066ff" layoutX="177.0" layoutY="212.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <GridPane prefHeight="44.0" prefWidth="166.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="24.0" minHeight="19.0" prefHeight="21.0" />
+                      <RowConstraints maxHeight="22.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <JFXRadioButton fx:id="radioDiv" prefHeight="17.0" prefWidth="54.0" style="-jfx-selected-color: #0066ff;" text="Divorce" GridPane.columnIndex="1">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tgStatus" />
+                           </toggleGroup>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radioSingle" layoutX="10.0" layoutY="9.0" prefHeight="17.0" prefWidth="54.0" style="-jfx-selected-color: #0066ff;" text="Single" toggleGroup="$tgStatus">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXRadioButton>
+                        <JFXRadioButton fx:id="radioRel" layoutX="93.0" layoutY="10.0" prefHeight="17.0" prefWidth="54.0" style="-jfx-selected-color: #0066ff;" text="Relationship" toggleGroup="$tgStatus" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets top="20.0" />
+                           </GridPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="radioMarr" layoutX="10.0" layoutY="24.0" prefHeight="17.0" prefWidth="54.0" style="-jfx-selected-color: #0066ff;" text="Married" toggleGroup="$tgStatus" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets top="20.0" />
+                           </GridPane.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXRadioButton>
+                     </children>
+                  </GridPane>
+                  <JFXDatePicker fx:id="dateJoined" defaultColor="#0066ff" prefHeight="25.0" prefWidth="211.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+            <VBox maxHeight="242.0" prefHeight="226.0" prefWidth="244.0" HBox.hgrow="NEVER">
+               <HBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </HBox.margin>
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="225.0" fitWidth="246.0" pickOnBounds="true" preserveRatio="true" />
+                  <JFXButton alignment="CENTER" onAction="#chooseImage" prefHeight="25.0" prefWidth="180.0" text="Chosse Photo" VBox.vgrow="NEVER">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="40.0" top="5.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox prefHeight="144.0" prefWidth="716.0">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="716.0" style="-fx-background-color: #0066ff;">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="716.0" text="Assign Subject &amp; Class" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Britannic Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <GridPane prefHeight="112.0" prefWidth="717.0" VBox.vgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="390.0" minWidth="10.0" prefWidth="264.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="459.0" minWidth="10.0" prefWidth="452.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                  <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Select Class" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <JFXComboBox fx:id="comboClass" focusColor="#0066ff" prefHeight="25.0" prefWidth="166.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></JFXComboBox>
+                  <Label text="Select Subject" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <CheckComboBox fx:id="checkComboSub" prefHeight="25.0" prefWidth="166.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></CheckComboBox>
+                  <JFXButton onAction="#editAction" prefHeight="25.0" prefWidth="99.0" text="Save Changes" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <GridPane.margin>
+                        <Insets left="50.0" top="5.0" />
+                     </GridPane.margin></JFXButton>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

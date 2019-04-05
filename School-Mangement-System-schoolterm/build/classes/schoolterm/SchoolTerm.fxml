@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="578.0" prefWidth="743.0" stylesheets="@Term.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolterm.SchoolTermController">
+    <children>
+      <HBox prefHeight="22.0" prefWidth="257.0" style="-fx-background-color: #0066ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+              <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="22.0" prefWidth="138.0" text="TERM/SESSION" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Britannic Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" layoutX="157.0" layoutY="56.0" prefHeight="518.0" prefWidth="580.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="157.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="56.0">
+        <columns>
+          <TableColumn fx:id="columnName" prefWidth="159.0" text="Name" />
+          <TableColumn fx:id="columnStart" prefWidth="143.0" text="Start On" />
+            <TableColumn fx:id="columnEnd" prefWidth="141.0" text="End On" />
+            <TableColumn fx:id="columnAcaYear" maxWidth="1.7976931348623157E308" prefWidth="136.0" text="Academic Year" />
+        </columns>
+      </TableView>
+      <HBox layoutY="22.0" prefHeight="25.0" prefWidth="263.0" style="-fx-background-color: #0066ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label text="Current Term" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="21.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="15.0" layoutY="47.0">
+         <children>
+            <JFXComboBox fx:id="comboAcaYear" focusColor="#0066ff" prefHeight="25.0" prefWidth="126.0" promptText="Academic Year">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXComboBox>
+            <JFXComboBox fx:id="comboTerm" focusColor="#0066ff" prefHeight="25.0" prefWidth="126.0" promptText="Term">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></JFXComboBox>
+            <JFXButton onAction="#saveAction" prefHeight="28.0" prefWidth="69.0" text="Save">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton onAction="#addAction" prefHeight="28.0" prefWidth="94.0" text="Add Term">
+               <VBox.margin>
+                  <Insets left="13.0" top="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="butEdit" onAction="#editAction" prefHeight="28.0" prefWidth="94.0" text="Edit Term">
+               <VBox.margin>
+                  <Insets left="13.0" top="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="butDelete" onAction="#deleteAction" prefHeight="28.0" prefWidth="94.0" text="Delete Term">
+               <VBox.margin>
+                  <Insets left="13.0" top="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Separator halignment="LEFT" layoutX="146.0" layoutY="22.0" orientation="VERTICAL" prefHeight="578.0" prefWidth="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="145.0" AnchorPane.rightAnchor="580.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>

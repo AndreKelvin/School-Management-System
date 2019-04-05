@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="548.0" prefWidth="865.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schooltab.SchoolTabController">
+  <tabs>
+    <Tab onSelectionChanged="#classAction" text="CLASS">
+         <content>
+            <BorderPane fx:id="bPaneClass" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+    </Tab>
+    <Tab onSelectionChanged="#subjectAction" text="SUBJECT">
+         <content>
+            <BorderPane fx:id="bPaneSub" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+    </Tab>
+      <Tab onSelectionChanged="#termAction" text="TERM">
+         <content>
+            <BorderPane fx:id="bPaneTerm" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab onSelectionChanged="#gradeAction" text="GRADING SYSTEM">
+         <content>
+            <BorderPane fx:id="bPaneGrade" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab onSelectionChanged="#teacherAction" text="TEACHERS">
+         <content>
+            <BorderPane fx:id="bPaneTeach" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab onSelectionChanged="#schoolFeesAction" text="SCHOOL FEES">
+         <content>
+            <BorderPane fx:id="bPaneFees" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab onSelectionChanged="#schoolDetailsAction" text="SCHOOL DETAILS">
+         <content>
+            <BorderPane fx:id="bPaneSchDetails" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab onSelectionChanged="#openStudentFees" text="STUDENT FEES">
+        <content>
+            <BorderPane fx:id="bPaneStuFee" />
+        </content>
+      </Tab>
+      <Tab onSelectionChanged="#openSalary" text="TEACHERS SALARY">
+         <content>
+            <BorderPane fx:id="bPaneSalary" />
+         </content>
+      </Tab>
+      <Tab onSelectionChanged="#openSchoolExpenses" text="SCHOOL EXPENSES">
+         <content>
+            <BorderPane fx:id="bPaneExpenses" />
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
